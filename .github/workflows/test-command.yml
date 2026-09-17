@@ -20,6 +20,7 @@ jobs:
       # Checkout the branch to test
       - uses: actions/checkout@v6
         with:
+          persist-credentials: false
           repository: ${{ steps.vars.outputs.repository }}
           ref: ${{ steps.vars.outputs.branch }}
 
